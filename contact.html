@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.contact-form {
+  margin: 0 auto;
+  width: 300px;
+  padding: 25px;
+  background: #fff;
+}
+
+.contact-title {
+  text-align: center;
+  font: 20px sans-serif;
+  color: #121212;
+  margin-bottom: 25px;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font: 16px sans-serif;
+  color: #121212;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #121212;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type="button"] {
+  background: #121212;
+  width: 100%;
+  padding: 10px;
+  font: bold 13px "Lucida Grande";
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.contact-form input[type="button"]:hover {
+  background: #000;
+}
+
+.contact-form-error-message,
+.contact-form-success-message {
+  margin-top: 15px;
+  text-align: center;
+  font: 14px sans-serif;
+}
+
+</style>
+</head>
+<body>
+<div class="contact-form">
+  <h2 class="contact-title">Get in touch</h2>
+  <form name="contact-form">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="email" placeholder="Email address">
+    <textarea name="message" placeholder="Type your message here..."></textarea>
+    <input type="button" value="Send">
+    <div class="contact-form-error-message" id="contact-form-error-message"></div>
+    <div class="contact-form-success-message" id="contact-form-success-message"></div>
+  </form>
+</div>
+</body>
+</html>

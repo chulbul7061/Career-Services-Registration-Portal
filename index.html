@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontDesign</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="about.html"> About </a>
+                </li>
+                <li>
+                    <a href="contact.html"> Contact </a>
+                </li>
+                <li> <a href="Terms.html"> Terms of use </a>
+                </li>
+                <li>
+                    <a href="join.html"> Join Us </a>
+                </li>
+                <li>
+                    <a href="admin.php"> adminLogIn </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 style="text-align: center;">Career Services Registration Portal</h1>
+    <hr>
+    <h3>Personal Details</h3>
+    <hr>
+    <div class="divone">
+        <form action="index.php" method="post" enctype="multipart/form-data" >
+
+            Enter Program:<input type="text" name="selectprogram" required><br><br>
+            Prov. Registration Number<input type="number" name="regno" required><br><br>
+            Date of Birth<input type="date" name="dob" required><br><br>
+            Gender:
+            <input type="radio" name="gender" value="Male" required>Male
+
+            <input type="radio" name="gender" value="Female" required>Female<br><br>
+            Nationality <input type="text" name="nationality" required><br><br>
+            Mobile <input type="number" name="mobile" required><br><br>
+            Email <input type="email" name="email" required><br><br>
+            Father Name<input type="text" name="fathername" required><br><br>
+            Mother Name<input type="text" name="mothername" required><br><br>
+            Father Occupation Name<input type="text" name="fatheroccupation" required><br><br>
+            Mother Occupation Name<input type="text" name="motheroccupation" required><br><br>
+            Category <select name="category" id="">
+                <option value="Gen">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+
+
+
+
+    </div>
+    <hr>
+    <h3>Current Qualifications Details(optional)</h3>
+    <hr>
+    Program: <input type="text" name="program" ><br><br>
+    Starting Batch Year: <input type="text" name="startbatch" ><br><br>
+    Passing Batch Year: <input type="text" name="passingbatch" ><br><br>
+
+    <div class="table1">
+        <table>
+            <tr>
+                <th>Qualifications</th>
+                <th>Board/University</th>
+                <th>Batch/Year</th>
+                <th>%/CGPA</th>
+            </tr>
+
+            <tr>
+                <td>
+                    10th
+                </td>
+
+                <td>
+                    <input type="text" name="board_10th">
+                </td>
+
+                <td>
+                    <input type="text" name="year_10th">
+                </td>
+                <td>
+                    <input type="text" name="cgpa_10th">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    10+2
+                </td>
+
+                <td>
+                    <input type="text" name="boad_2">
+                </td>
+
+                <td>
+                    <input type="text" name="year_2">
+                </td>
+                <td>
+                    <input type="text" name="CGPA_2">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Diploma
+                </td>
+
+                <td>
+                    <input type="text" name="board_diploma">
+                </td>
+
+                <td>
+                    <input type="text" name="year_diploma">
+                </td>
+                <td>
+                    <input type="text" name="cgpa_diploma">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Graduation
+                </td>
+
+                <td>
+                    <input type="text" name="board_gra">
+                </td>
+
+                <td>
+                    <input type="text" name="year_gra">
+                </td>
+                <td>
+                    <input type="text" name="cgpa_gra">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Post Graduation
+                </td>
+
+                <td>
+                    <input type="text" name="board_postgra">
+                </td>
+
+                <td>
+                    <input type="text" name="year_postgra">
+                </td>
+                <td>
+                    <input type="text" name="cgpa_postgra">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Other
+                </td>
+
+                <td>
+                    <input type="text" name="">
+                </td>
+
+                <td>
+                    <input type="text" name="">
+                </td>
+                <td>
+                    <input type="text" name="">
+                </td>
+
+            </tr>
+        </table>
+    </div>
+    <br>
+    <hr>
+    <h3>Address</h3>
+    <hr>
+    Permanent Address:<textarea name="address1" id="" size="20" value="enter your address here!"
+        id="address"></textarea>
+    <br><br>
+    Corresspondence Address:<textarea name="address2" id="" size="20" value="enter your address here!"
+        id="address"></textarea><br><br>
+
+    <hr>
+    <h3>Knowledge of Language</h3>
+    <hr>
+    <input type="text" name="Language1" id="" value="Language1"><br><br>
+    <input type="text" name="Language2" id="" value="Language2"><br><br>
+    <input type="text" name="Language3" id="" value="Language3"><br><br>
+    <input type="text" name="Language4" id="" value="Language4"><br><br>
+
+    Work Experience(Optional): <input type="radio" name="workexperiance">Yes<input type="radio" name="ra">No <br><br>
+    Linked-In Profile URL: <input type="text" name="linkedin"><br>
+    Id proof: <input type="file" name="idproof" required><br><br>
+    Upload CV: <input type="file" name="cv" required><br><br>
+    <input type="checkbox" name="" required>I have read the declaration the placement Policy.
+    <br><br>
+    
+    <button type="submit" name="submit">Submit</button>
+
+
+   
+    </script>
+
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</body>
+
+</html>

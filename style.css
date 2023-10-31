@@ -1,0 +1,122 @@
+ body {
+     height: 125vh;
+     margin-top: 80px;
+     padding: 30px;
+     background-size: cover;
+     font-family: sans-serif;
+     background-color: #f3f3f3;
+ }
+
+ header {
+     background-color: orange;
+     position: fixed;
+     left: 0;
+     right: 0;
+     top: 5px;
+     height: 30px;
+     display: flex;
+     align-items: center;
+     box-shadow: 0 0 25px 0 black;
+ }
+
+ header * {
+     display: inline;
+ }
+
+ header li a {
+     margin: 20px;
+ }
+
+ header li a {
+     color: rgb(71, 39, 231);
+     text-decoration: none;
+ }
+
+ h1,h3{
+    background-size: cover;
+    font-family: sans-serif;
+      
+    color: rgb(43, 85, 192);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+ }
+
+ textarea {
+    width: 93%;
+    height: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+  }
+  div.divone {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Style the table 
+table {
+    width: 100%;
+    border-collapse:separate ;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 5px;
+    margin: 5px;
+}
+th{
+    background-color: #333;
+    color: white;
+}
+*/
+
+
+/* Add this style for the blinking heading effect */
+h1 {
+    text-align: center;
+    animation: blink 1s linear infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      color: rgb(0, 0, 0);
+    }
+    50% {
+      color: red;
+    }
+    100% {
+      color: black;
+    }
+  }
+  
